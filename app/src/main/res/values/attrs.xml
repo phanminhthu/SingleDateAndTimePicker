@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="DetailTextView">
+        <attr name="text_color" format="color" />
+        <attr name="text_color_detail" format="color" />
+        <attr name="text_color_hint" format="color" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text" format="string" />
+        <attr name="single_line" format="boolean" />
+        <attr name="max_line" format="integer" />
+        <attr name="text_des" format="string" />
+        <attr name="text_detail" format="string" />
+        <attr name="add_listener" format="boolean" />
+        <attr name="input_type" format="string" />
+        <attr name="can_edit" format="boolean" />
+        <attr name="show_text_characters" format="boolean" />
+        <attr name="max_length" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="typefont" format="string" />
+        <attr name="font_textstyle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ValidateEditText">
+        <!--<attr name="vfont" format="string" />-->
+        <!--<attr name="vfont_textstyle" format="string" />-->
+    </declare-styleable>
+
+    <declare-styleable name="SimpleZoomImageView">
+        <attr name="zoomage_zoomable" format="boolean" />
+        <attr name="zoomage_translatable" format="boolean" />
+        <attr name="zoomage_restrictBounds" format="boolean" />
+        <attr name="zoomage_animateOnReset" format="boolean" />
+        <attr name="zoomage_autoCenter" format="boolean" />
+        <attr name="zoomage_minScale" format="float" />
+        <attr name="zoomage_maxScale" format="float" />
+        <attr name="zoomage_autoResetMode" format="enum">
+            <enum name="UNDER" value="0" />
+            <enum name="OVER" value="1" />
+            <enum name="ALWAYS" value="2" />
+            <enum name="NEVER" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MaterialCalendarView">
+
+        <attr name="mcv_dateTextAppearance" format="reference" />
+        <attr name="mcv_weekDayTextAppearance" format="reference" />
+        <attr name="mcv_headerTextAppearance" format="reference" />
+
+        <attr name="mcv_arrowColor" format="color" />
+        <attr name="mcv_leftArrowMask" format="reference" />
+        <attr name="mcv_rightArrowMask" format="reference" />
+        <attr name="mcv_selectionColor" format="color" />
+
+        <attr name="mcv_showOtherDates" format="integer">
+            <flag name="none" value="0" />
+            <flag name="other_months" value="1" />
+            <flag name="out_of_range" value="2" />
+            <flag name="decorated_disabled" value="4" />
+            <flag name="defaults" value="4" />
+            <flag name="all" value="7" />
+        </attr>
+
+        <attr name="mcv_allowClickDaysOutsideCurrentMonth" format="boolean" />
+
+        <attr name="mcv_weekDayLabels" format="reference" />
+        <attr name="mcv_monthLabels" format="reference" />
+
+        <!-- We want to accept match_parent but not wrap_content. It'd be better if we could
+        point to the real match_parent constant, but since it hasn't change since API 1,
+        I think it's safe to hardcode it-->
+        <attr name="mcv_tileSize" format="dimension">
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="mcv_tileHeight" format="dimension">
+            <enum name="match_parent" value="-1" />
+        </attr>
+        <attr name="mcv_tileWidth" format="dimension">
+            <enum name="match_parent" value="-1" />
+        </attr>
+
+        <attr name="mcv_firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+
+        <attr name="mcv_calendarMode" format="enum">
+            <enum name="month" value="0" />
+            <enum name="week" value="1" />
+        </attr>
+
+        <attr name="mcv_titleAnimationOrientation" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="twowayview_TwoWayView">
+        <attr name="twowayview_layoutManager" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_GridLayoutManager">
+        <attr name="twowayview_numColumns" format="integer"/>
+        <attr name="twowayview_numRows" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_SpacingItemDecoration">
+        <attr name="android:verticalSpacing" tools:ignore="ResourceName"/>
+        <attr name="android:horizontalSpacing" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_DividerItemDecoration">
+        <attr name="android:divider" tools:ignore="ResourceName"/>
+        <attr name="twowayview_verticalDivider" format="reference"/>
+        <attr name="twowayview_horizontalDivider" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_StaggeredGridViewChild">
+        <attr name="twowayview_span" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_SpannableGridViewChild">
+        <attr name="twowayview_colSpan" format="integer"/>
+        <attr name="twowayview_rowSpan" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="twowayview_TwoWayLayoutManager">
+        <attr name="android:orientation" tools:ignore="ResourceName"/>
+    </declare-styleable>
+
+    <item name="twowayview_item_click_support" type="id"/>
+    <item name="twowayview_item_selection_support" type="id"/>
+
+    <!--lib singledateandtimepicker-->
+    <declare-styleable name="WheelPicker">
+        <attr name="wheel_data" format="reference"/>
+        <attr name="wheel_selected_item_position" format="integer"/>
+        <attr name="wheel_item_text_size" format="dimension"/>
+        <attr name="wheel_item_text_color" format="color"/>
+        <attr name="wheel_selected_item_text_color" format="color"/>
+        <attr name="wheel_same_width" format="boolean"/>
+        <attr name="wheel_maximum_width_text" format="string"/>
+        <attr name="wheel_maximum_width_text_position" format="integer"/>
+        <attr name="wheel_visible_item_count" format="integer"/>
+        <attr name="wheel_item_space" format="dimension"/>
+        <attr name="wheel_cyclic" format="boolean"/>
+        <attr name="wheel_indicator" format="boolean"/>
+        <attr name="wheel_indicator_color" format="color"/>
+        <attr name="wheel_indicator_size" format="dimension"/>
+        <attr name="wheel_curtain" format="boolean"/>
+        <attr name="wheel_curtain_color" format="color"/>
+        <attr name="wheel_atmospheric" format="boolean"/>
+        <attr name="wheel_curved" format="boolean"/>
+        <attr name="wheel_item_align" format="enum">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SingleDateAndTimePicker">
+        <attr name="picker_todayText" format="string"/>
+        <attr name="picker_textColor" format="color"/>
+        <attr name="picker_selectedTextColor" format="color"/>
+        <attr name="picker_textSize" format="dimension"/>
+        <attr name="picker_curved" format="boolean"/>
+        <attr name="picker_cyclic" format="boolean"/>
+        <attr name="picker_mustBeOnFuture" format="boolean"/>
+        <attr name="picker_visibleItemCount" format="integer"/>
+        <attr name="picker_selectorColor" format="integer"/>
+        <attr name="picker_selectorHeight" format="dimension"/>
+        <attr name="picker_displayMonth" format="boolean"/>
+        <attr name="picker_displayYears" format="boolean"/>
+        <attr name="picker_displayDays" format="boolean"/>
+        <attr name="picker_displayDaysOfMonth" format="boolean" />
+        <attr name="picker_displayMinutes" format="boolean"/>
+        <attr name="picker_displayHours" format="boolean"/>
+        <attr name="picker_displayMonthNumbers" format="boolean" />
+    </declare-styleable>
+
+</resources>

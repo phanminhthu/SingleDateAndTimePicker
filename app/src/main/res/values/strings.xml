@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestSingleDateAndTimePicker</string>
+    <!--lib singledateandtimepicker-->
+    <string name="picker_today">Today</string>
+    <string name="picker_am">AM</string>
+    <string name="picker_pm">PM</string>
+</resources>
