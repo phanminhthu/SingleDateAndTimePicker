@@ -73,4 +73,5 @@
                 });
         singleBuilder.display();
 ```
-
+3. Documenation
+https://github.com/florent37/SingleDateAndTimePicker
